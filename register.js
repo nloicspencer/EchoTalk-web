@@ -19,9 +19,9 @@ async function autoSignUp() {
     .insert([{ pseudo: pseudo }]);
 
   if (error) {
-    statusElement.textContent = "Erreur lors de la création du compte : " + error.message;
+    statusElement.textContent = "❌ Erreur lors de la création du compte : " + error.message;
   } else {
-    statusElement.innerHTML = `Pseudo généré : <strong>${pseudo}</strong>`;
+    statusElement.innerHTML = `✅ Pseudo généré : <strong>${pseudo}</strong>`;
   }
 }
 
