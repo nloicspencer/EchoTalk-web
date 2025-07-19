@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoTalk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EchoTalk</h1>
+        <form id="echoForm">
+            <textarea id="echoInput" placeholder="Exprime-toi..." required></textarea>
+            <button type="submit">Publier un écho</button>
+        </form>
+        <p id="statusMessage"></p>
+        <div id="feedContainer">
+            <h2>Échos publiés</h2>
+            <div id="feed"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
